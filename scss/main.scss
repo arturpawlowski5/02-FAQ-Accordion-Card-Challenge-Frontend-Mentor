@@ -1,0 +1,65 @@
+@import "attribution";
+@import "config";
+@import "component";
+@import "illustration";
+@import "faq";
+@import "animation";
+@import "responsive";
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient($soft-violet, $soft-blue);
+	color: $dark-gray-blue;
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 0.8rem;
+	line-height: 1.3rem;
+	font-weight: 400;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	justify-content: center;
+}
+
+h1 {
+	color: $very-dark-desaturated-blue;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+button {
+	color: $very-dark-gray-blue;
+	font-size: 1rem;
+	line-height: 1.3rem;
+}
+
+button:focus:not(:focus-visible) {
+	outline: 0;
+}
+
+button:focus-visible {
+	outline: 2px solid $soft-violet;
+	outline-offset: 0px;
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 20px auto;
+}
+
+.font-weight-bold {
+	font-weight: 600;
+	color: $soft-blue;
+}
